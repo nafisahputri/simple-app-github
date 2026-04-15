@@ -9,7 +9,7 @@ permissions:
   packages: write
 
 env:
-  IMAGE_NAME: ghcr.io/nafisahputri/nginx-nafisahputri
+  IMAGE_NAME: ghcr.io/nafisahputri/nginx-nafisahputri:latest
 
 jobs:
   build-push-image:
