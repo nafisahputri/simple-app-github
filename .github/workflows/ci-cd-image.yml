@@ -41,7 +41,10 @@ jobs:
         run: docker compose down --rmi all
 
       - name: start container
-        run: docker compose up -d
+  run: docker compose up -d
 
-      - name: check container
-        run: curl localhost:8080
+- name: wait for container
+  run: sleep 10
+
+- name: check container
+  run: curl --retry 5 --retry-delay 5 http://localhost:8080
