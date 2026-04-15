@@ -1,0 +1,5 @@
+services:
+  webserver:
+    image: ghcr.io/nafisahputri/nginx-nafisahputri
+    ports:
+      - "8080:80"
